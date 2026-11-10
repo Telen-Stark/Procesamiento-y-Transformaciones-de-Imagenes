@@ -32,11 +32,7 @@ gcc -fopenmp demo_lib_v2.c -o procesador_imagenes
 | Archivo / Carpeta | Descripción |
 | --- | --- |
 | `demo_lib_v2.c` | Punto de entrada principal (`main`). Controla el bucle de procesamiento de 10 imágenes y ejecuta secciones paralelas mediante `#pragma omp sections`.
-
- |
 | `img_trans_v2.h` | Librería nativa con las funciones de procesamiento BMP (`img2gray`, `invHorizontal`, `invVertical`, `desenfoque`, `gray2color`).
-
- |
 | `img/` | Carpeta de trabajo donde deben depositarse las imágenes de entrada y donde se generan las imágenes procesadas de salida. |
 | `README.md` | Guía de compilación, ejecución y resumen general del proyecto. |
 
