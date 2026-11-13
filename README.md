@@ -43,4 +43,4 @@ En el primer avance se implementó el procesamiento paralelo de **4 transformaci
 * **invVertical**: Transformación vertical sobre imagen a color y sobre versión a escala de grises.
 
 ## Documentación (Wiki)
-Para ver el análisis explicativo línea por línea de las funciones más importantes, el detalle de las directivas OpenMP empleadas y las **tablas y métricas comparativas de rendimiento entre los 3 equipos de prueba**, consulta nuestra [wiki].
+Para ver el análisis explicativo línea por línea de las funciones más importantes, el detalle de las directivas OpenMP empleadas y las **tablas y métricas comparativas de rendimiento entre los 3 equipos de prueba**, consulta nuestra [https://github.com/Telen-Stark/Procesamiento-y-Transformaciones-de-Imagenes/wiki].
