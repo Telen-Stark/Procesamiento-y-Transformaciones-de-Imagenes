@@ -11,8 +11,8 @@ El proyecto procesa un lote de **10 imágenes BMP** aplicando múltiples transfo
 ## Compilación y Ejecución
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/usuario/REPOSITORIO.git](https://github.com/USUARIO/REPOSITORIO.git)
-   cd REPOSITORIO
+   git clone [https://github.com/Telen-Stark/Procesamiento-y-Transformaciones-de-Imagenes.git](https://github.com/Telen-Stark/Procesamiento-y-Transformaciones-de-Imagenes.git)
+   cd Procesamiento-y-Transformaciones-de-Imagenes
     ```
 2. **Crear la carpeta de imágenes e incluir las 10 imágenes de prueba:**
 ```bash
