@@ -42,7 +42,7 @@ En el primer avance se implementó el procesamiento paralelo de **4 transformaci
 * **invHorizontal**: Transformación horizontal sobre imagen a color y sobre versión a escala de grises.
 * **invVertical**: Transformación vertical sobre imagen a color y sobre versión a escala de grises.
 
-* ## Funcionalidades Implementadas (Avance 2)
+## Funcionalidades Implementadas (Avance 2)
 En el segundo avance se implementó el procesamiento paralelo de **8 transformaciones concurrentes por imagen**:
 * Las tres transformaciones que ya se tenían del avance 1: **img2gray**, **invHorizontal** e **invVertical**}
 * **blur**: Efecto de desenfoque sobre imagen a color y sobre versión a escala de grises mediante kernel.
