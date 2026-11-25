@@ -62,7 +62,8 @@ En el primer avance se implementó el procesamiento paralelo de **4 transformaci
 * **bordesX**: Detección de bordes verticales mediante derivada parcial en X (Sobel).
 * **bordesY**: Detección de bordes horizontales mediante derivada parcial en Y (Sobel).
 
-## Enlace al video demostra
+## Enlace al video demostrativo
+[https://youtu.be/kgVzPlVeSGE]
 
 ## Documentación (Wiki)
 Para ver el análisis explicativo línea por línea de las funciones más importantes, el detalle de las directivas OpenMP empleadas y las **tablas y métricas comparativas de rendimiento entre los 3 equipos de prueba**, consulta nuestra [https://github.com/Telen-Stark/Procesamiento-y-Transformaciones-de-Imagenes/wiki].
