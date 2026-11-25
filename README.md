@@ -11,10 +11,10 @@ El proyecto procesa un lote de **10 imágenes BMP** aplicando múltiples transfo
 
 ## Compilación y Ejecución
 1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/Telen-Stark/Procesamiento-y-Transformaciones-de-Imagenes.git](https://github.com/Telen-Stark/Procesamiento-y-Transformaciones-de-Imagenes.git)
-   cd Procesamiento-y-Transformaciones-de-Imagenes
-    ```
+```bash
+git clone [https://github.com/Telen-Stark/Procesamiento-y-Transformaciones-de-Imagenes.git](https://github.com/Telen-Stark/Procesamiento-y-Transformaciones-de-Imagenes.git)
+cd Procesamiento-y-Transformaciones-de-Imagenes
+ ```
 2. **Crear la carpeta de imágenes e incluir las 10 imágenes de prueba:**
 ```bash
 mkdir -p img
@@ -31,9 +31,9 @@ gcc -fopenmp demo_lib_v2.c -o procesador_imagenes
 
 ## Visualización y uso de la interfaz
 1. **Ubícate en la misma carpeta**
-   ```bash
-   cd Procesamiento-y-Transformaciones-de-Imagenes
-    ```
+```bash
+cd Procesamiento-y-Transformaciones-de-Imagenes
+```
 2. **Crear la aplicación .exe**
 ```bash
 gcc -O3 -fopenmp pookies_engine.c -o pookies_engine.exe
@@ -48,7 +48,7 @@ python pookies_qt.py
 | --- | --- |
 | `demo_lib_v2.c` | Punto de entrada principal (`main`). Controla el bucle de procesamiento de 10 imágenes y ejecuta secciones paralelas mediante `#pragma omp sections`.
 | `img_trans_v2.h` | Librería nativa con las funciones de procesamiento BMP (`img2gray`, `invHorizontal`, `invVertical`, `desenfoque`, `gray2color`).
-| `imgagenes/` | Carpeta de trabajo donde deben depositarse las imágenes de entrada y donde se generan las imágenes procesadas de salida. |
+| `imagenes/` | Carpeta de trabajo donde deben depositarse las imágenes de entrada y donde se generan las imágenes procesadas de salida. |
 | `pookies_qt.py` | Ejecutable de python que abre la interfaz. |
 | `pookies_engine.c` | Motor de procesamiento de imágenes escrito en C. |
 | `README.md` | Guía de compilación, ejecución y resumen general del proyecto. |
