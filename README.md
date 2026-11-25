@@ -7,6 +7,7 @@ El proyecto procesa un lote de **10 imágenes BMP** aplicando múltiples transfo
 * Compilador **GCC** con soporte para OpenMP (`-fopenmp`).
 * Entorno de ejecución Linux (o WSL / MinGW en Windows).
 * Estructura de carpetas local con el directorio `./img/` creado.
+* Módulo oficial de python para la creación de GUI's `PySide6`
 
 ## Compilación y Ejecución
 1. **Clonar el repositorio:**
@@ -28,23 +29,34 @@ gcc -fopenmp demo_lib_v2.c -o procesador_imagenes
 ./procesador_imagenes
 ```
 
+## Visualización y uso de la interfaz
+1. **Ubícate en la misma carpeta**
+   ```bash
+   cd Procesamiento-y-Transformaciones-de-Imagenes
+    ```
+2. **Crear la aplicación .exe**
+```bash
+gcc -O3 -fopenmp pookies_engine.c -o pookies_engine.exe
+```
+3. **Abrir la interfaz:**
+```bash
+python pookies_qt.py
+```
+
 ## Estructura del Repositorio
 | Archivo / Carpeta | Descripción |
 | --- | --- |
 | `demo_lib_v2.c` | Punto de entrada principal (`main`). Controla el bucle de procesamiento de 10 imágenes y ejecuta secciones paralelas mediante `#pragma omp sections`.
 | `img_trans_v2.h` | Librería nativa con las funciones de procesamiento BMP (`img2gray`, `invHorizontal`, `invVertical`, `desenfoque`, `gray2color`).
-| `img/` | Carpeta de trabajo donde deben depositarse las imágenes de entrada y donde se generan las imágenes procesadas de salida. |
+| `imgagenes/` | Carpeta de trabajo donde deben depositarse las imágenes de entrada y donde se generan las imágenes procesadas de salida. |
+| `pookies_qt.py` | Ejecutable de python que abre la interfaz.
 | `README.md` | Guía de compilación, ejecución y resumen general del proyecto. |
 
-## Funcionalidades Implementadas (Avance 1)
+## Funcionalidades Implementadas
 En el primer avance se implementó el procesamiento paralelo de **4 transformaciones concurrentes por imagen**:
 * **img2gray**: Conversión a escala de grises y exportación de frecuencias para histogramas.
 * **invHorizontal**: Transformación horizontal sobre imagen a color y sobre versión a escala de grises.
 * **invVertical**: Transformación vertical sobre imagen a color y sobre versión a escala de grises.
-
-## Funcionalidades Implementadas (Avance 2)
-En el segundo avance se implementó el procesamiento paralelo de **8 transformaciones concurrentes por imagen**:
-* Las tres transformaciones que ya se tenían del avance 1: **img2gray**, **invHorizontal** e **invVertical**}
 * **blur**: Efecto de desenfoque sobre imagen a color y sobre versión a escala de grises mediante kernel.
 * **bordesX**: Detección de bordes verticales mediante derivada parcial en X (Sobel).
 * **bordesY**: Detección de bordes horizontales mediante derivada parcial en Y (Sobel).
