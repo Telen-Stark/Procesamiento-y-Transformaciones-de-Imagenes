@@ -49,7 +49,8 @@ python pookies_qt.py
 | `demo_lib_v2.c` | Punto de entrada principal (`main`). Controla el bucle de procesamiento de 10 imágenes y ejecuta secciones paralelas mediante `#pragma omp sections`.
 | `img_trans_v2.h` | Librería nativa con las funciones de procesamiento BMP (`img2gray`, `invHorizontal`, `invVertical`, `desenfoque`, `gray2color`).
 | `imgagenes/` | Carpeta de trabajo donde deben depositarse las imágenes de entrada y donde se generan las imágenes procesadas de salida. |
-| `pookies_qt.py` | Ejecutable de python que abre la interfaz.
+| `pookies_qt.py` | Ejecutable de python que abre la interfaz. |
+| `pookies_engine.c` | Motor de procesamiento de imágenes escrito en C. |
 | `README.md` | Guía de compilación, ejecución y resumen general del proyecto. |
 
 ## Funcionalidades Implementadas
@@ -60,6 +61,8 @@ En el primer avance se implementó el procesamiento paralelo de **4 transformaci
 * **blur**: Efecto de desenfoque sobre imagen a color y sobre versión a escala de grises mediante kernel.
 * **bordesX**: Detección de bordes verticales mediante derivada parcial en X (Sobel).
 * **bordesY**: Detección de bordes horizontales mediante derivada parcial en Y (Sobel).
+
+## Enlace al video demostra
 
 ## Documentación (Wiki)
 Para ver el análisis explicativo línea por línea de las funciones más importantes, el detalle de las directivas OpenMP empleadas y las **tablas y métricas comparativas de rendimiento entre los 3 equipos de prueba**, consulta nuestra [https://github.com/Telen-Stark/Procesamiento-y-Transformaciones-de-Imagenes/wiki].
